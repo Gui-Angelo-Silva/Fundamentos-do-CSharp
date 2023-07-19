@@ -1,6 +1,6 @@
 namespace MeuApp.Teste
 {
-    class Program
+    class Teste
     {
 
     }

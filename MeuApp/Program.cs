@@ -1,4 +1,5 @@
 ﻿using System;
+using MeuApp.Teste;
 
 namespace MeuApp 
 {
