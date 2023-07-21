@@ -1,14 +1,11 @@
-﻿using System;
-using MeuApp.Teste;
-
-namespace MeuApp 
+﻿namespace MeuApp 
 {
     class Program
     {
         static void Main(string[] args) 
         {
-            var texto = "Testando";
-            Console.WriteLine(texto);
+            int idade = 25;
+            //Console.WriteLine(texto);
         }
     }
 }
