@@ -4,7 +4,9 @@
     {
         static void Main(string[] args) 
         {
-            int idade = 25;
+            bool usuarioCadastrado = false;
+            bool pagamentoRecebido = true;
+            var usuarioExpirado = false;
         }
     }
-}
+} 
