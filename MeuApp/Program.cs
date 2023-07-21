@@ -4,8 +4,8 @@
     {
         static void Main(string[] args) 
         {
-            int idade = 25;
-            //Console.WriteLine(texto);
+            byte meuByte = 127;
+            
         }
     }
 }
