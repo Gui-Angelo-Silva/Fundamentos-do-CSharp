@@ -4,8 +4,7 @@
     {
         static void Main(string[] args) 
         {
-            byte meuByte = 127;
-            
+            int idade = 25;
         }
     }
 }
