@@ -6,20 +6,22 @@ namespace MeuApp
     {
         static void Main(string[] args) 
         {
-            int inteiro = 100;
-            float real = 25.8f;
+            int soma = 25 + 22;
+            int subtracao = 25 - 22;
+            int divisao = 25 * 22;
+            int multiplicacao = 22 / 5;
 
-            //real = inteiro; // 100.0f
-            //inteiro = (int)real;
-            //string valorReal = real.ToString();
-            //inteiro = int.Parse("255");
-            //inteiro = int.Parse(real.ToString());
-            //inteiro = Convert.ToInt32(real);
+            int x = 2 + 2 * 2;
+            int y = 2 + (2 * 2);
+            int z = (2 + 2) * 6;
 
-            //Console.WriteLine(valorReal);
-            Console.WriteLine(inteiro);
-            Console.WriteLine(Convert.ToBoolean("true"));
-            //Console.WriteLine(Convert.ToInt32(real));
+            Console.WriteLine(soma);
+            Console.WriteLine(subtracao);
+            Console.WriteLine(divisao);
+            Console.WriteLine(multiplicacao);
+            Console.WriteLine(x);
+            Console.WriteLine(y);
+            Console.WriteLine(z);
         }
     }
 } 
