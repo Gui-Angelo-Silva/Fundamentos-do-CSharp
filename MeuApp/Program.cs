@@ -6,11 +6,13 @@ namespace MeuApp
     {
         static void Main(string[] args) 
         {
-            int x = 0;
-            x += 5;
-            x -= 1;
-            x *= 10;
-            x /= 2;
+            int x = 25;
+            x == 0;
+            x != 0;
+            x > 0;
+            x < 0;
+            x <= 0;
+            x >= 0;
         }
     }
 } 
