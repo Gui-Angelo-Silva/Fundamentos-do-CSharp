@@ -6,7 +6,7 @@ namespace MeuApp
     {
         static void Main(string[] args) 
         {
-            int inteiro = int.Parse("100");
+            int inteiro = Convert.ToInt32("100");
         }
     }
 } 
