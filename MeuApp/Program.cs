@@ -6,18 +6,32 @@ namespace MeuApp
     {
         static void Main(string[] args)
         {
-            var arr = new string[2];
-            arr[0] = "Item 1";
+            var mouse = new Product(1, "Mouse Gamer", 299.97);
 
-            var arr2 = arr;
-            
-            Console.WriteLine(arr[0]);
-            Console.WriteLine(arr2[0]);
+            mouse.Id = 55;
 
-            arr[0] = "Item 2";
+            Console.WriteLine(mouse.Id);
+            Console.WriteLine(mouse.Name);
+            Console.WriteLine(mouse.Price);
+        }
+    }
 
-            Console.WriteLine(arr[0]);
-            Console.WriteLine(arr2[0]);
+    struct Product
+    {
+        public Product(int id, string name, double price)
+        {
+            Id = id;
+            Name = name;
+            Price = price;
+        }
+
+        public int Id;
+        public string Name;
+        public double Price;
+
+        public double PriceInDolar(double dolar)
+        {
+            return Price * dolar;
         }
     }
 }
