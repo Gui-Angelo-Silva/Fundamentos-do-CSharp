@@ -6,8 +6,10 @@ namespace MeuApp
     {
         static void Main(string[] args) 
         {
-            int idade = 25; // Alias
-            Int32 idade = 25; // Tipo
+            float valor = 25.8f;
+            int outro = 25;
+
+            valor = outro; // Conversão Implícita
         }
     }
 } 
