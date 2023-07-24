@@ -6,8 +6,13 @@ namespace MeuApp
     {
         static void Main(string[] args) 
         {
-            int x = 2;
-            Console.WriteLine(x <= 25);
+            int x = 12;
+            bool entre = (x > 25) && (x < 40);
+            bool ou = (x > 25) || (x < 40);
+            bool negacao = !(x < 25);
+            Console.WriteLine(entre);
+            Console.WriteLine(ou);
+            Console.WriteLine(negacao);
         }
     }
 } 
