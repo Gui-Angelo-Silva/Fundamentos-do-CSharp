@@ -6,12 +6,8 @@ namespace MeuApp
     {
         static void Main(string[] args) 
         {
-            int? idade = 0;
-            Console.WriteLine(idade);
-            idade = null;
-            Console.WriteLine(idade);
-            idade = 25;
-            Console.WriteLine(idade);
+            int idade = 25; // Alias
+            Int32 idade = 25; // Tipo
         }
     }
 } 
