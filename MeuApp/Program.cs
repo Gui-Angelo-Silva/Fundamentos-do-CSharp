@@ -6,10 +6,8 @@ namespace MeuApp
     {
         static void Main(string[] args) 
         {
-            float valor = 25.8f;
-            int outro = 25;
-
-            valor = outro; // Conversão Implícita
+            int inteiro = 100;
+            uint inteiroSemSinal = (uint)inteiro; // Conversao explícita
         }
     }
 } 
