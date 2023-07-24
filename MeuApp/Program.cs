@@ -6,13 +6,8 @@ namespace MeuApp
     {
         static void Main(string[] args) 
         {
-            int x = 25;
-            x == 0;
-            x != 0;
-            x > 0;
-            x < 0;
-            x <= 0;
-            x >= 0;
+            int x = 2;
+            Console.WriteLine(x <= 25);
         }
     }
 } 
