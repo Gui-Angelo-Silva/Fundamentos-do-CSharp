@@ -6,13 +6,26 @@ namespace MeuApp
     {
         static void Main(string[] args)
         {
-            var nome = RetornaNome("Guilherme", "Silva");
+            MeuMetodo();
+
+            string nome = RetornaNome("Guilherme", "Silva");
             Console.WriteLine(nome);
         }
 
-        static string RetornaNome(string nome, string sobrenome)
+        static void MeuMetodo()
         {
-            return nome + " " + sobrenome;
+            Console.WriteLine("C# é legal!");
+        }
+
+        static string RetornaNome(
+            string nome,
+            string sobrenome,
+            int idade = 18,
+            bool teste = false,
+            double novo = 33.42
+        )
+        {
+            return nome + " " + sobrenome + " tem " + idade.ToString();
         }
     }
 }
