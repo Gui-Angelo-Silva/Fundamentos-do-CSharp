@@ -6,32 +6,13 @@ namespace MeuApp
     {
         static void Main(string[] args)
         {
-            int idade = 18;
-            int maioridade = 21;
-            int idadeMaxima = 65;
-
-            if (idade >= maioridade)
+            bool? valor = null;
+            switch (valor)
             {
-                Console.WriteLine("É diferente");
+                case true: Console.WriteLine("Verdadeiro!"); break;
+                case false: Console.WriteLine("Falso!"); break;
+                default: Console.WriteLine("Nulo"); break;
             }
-            else if (idade > 25)
-            {
-                Console.WriteLine("É igual");
-            }
-            else if (idade > 32)
-            {
-                Console.WriteLine("É igual");
-            }
-            else if (idade > 38)
-            {
-                Console.WriteLine("É igual");
-            }
-            else
-            {
-                Console.WriteLine("É igual");
-            }
-
-            Console.WriteLine("Finalizou o programa");
         }
     }
 }
