@@ -6,17 +6,13 @@ namespace MeuApp
     {
         static void Main(string[] args)
         {
-            int valor = 0;
-            // while (valor <= 5)
-            // {   
-            //     Console.WriteLine(valor);
-            //     valor++; 
-            // }
-            do
-            {
-                Console.WriteLine(valor);
-                valor++;
-            } while (valor < 5);
+            var nome = RetornaNome("Guilherme", "Silva");
+            Console.WriteLine(nome);
+        }
+
+        static string RetornaNome(string nome, string sobrenome)
+        {
+            return nome + " " + sobrenome;
         }
     }
 }
