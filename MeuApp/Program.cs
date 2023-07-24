@@ -1,18 +1,37 @@
 ﻿using System;
 
-namespace MeuApp 
+namespace MeuApp
 {
     class Program
     {
-        static void Main(string[] args) 
+        static void Main(string[] args)
         {
-            int x = 12;
-            bool entre = (x > 25) && (x < 40);
-            bool ou = (x > 25) || (x < 40);
-            bool negacao = !(x < 25);
-            Console.WriteLine(entre);
-            Console.WriteLine(ou);
-            Console.WriteLine(negacao);
+            int idade = 18;
+            int maioridade = 21;
+            int idadeMaxima = 65;
+
+            if (idade >= maioridade)
+            {
+                Console.WriteLine("É diferente");
+            }
+            else if (idade > 25)
+            {
+                Console.WriteLine("É igual");
+            }
+            else if (idade > 32)
+            {
+                Console.WriteLine("É igual");
+            }
+            else if (idade > 38)
+            {
+                Console.WriteLine("É igual");
+            }
+            else
+            {
+                Console.WriteLine("É igual");
+            }
+
+            Console.WriteLine("Finalizou o programa");
         }
     }
-} 
+}
