@@ -4,8 +4,10 @@
     {
         static void Main(string[] args) 
         {
-            IEnumerable<MeuTipoComplexo> aluno = new IEnumerable<MeuTipoComplexo>();
-            char aluno = new IEnumerable<MeuTipoComplexo>();
+            object quantidade;
+            quantidade = 1;
+            quantidade = 2.5;
+            quantidade = "Teste";
         }
     }
 } 
