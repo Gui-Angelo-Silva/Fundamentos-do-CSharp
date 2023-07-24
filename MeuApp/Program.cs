@@ -6,8 +6,7 @@ namespace MeuApp
     {
         static void Main(string[] args) 
         {
-            int inteiro = 100;
-            uint inteiroSemSinal = (uint)inteiro; // Conversao explícita
+            int inteiro = int.Parse("100");
         }
     }
 } 
