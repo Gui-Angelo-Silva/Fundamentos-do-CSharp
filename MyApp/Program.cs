@@ -6,13 +6,12 @@ namespace MyApp
     {
         static void Main(string[] args)
         {
-            var id = Guid.NewGuid();
-            id.ToString();
+            var price = 10.2;
+            //var texto = "O preço do produto é " + price + "apenas na promoção";
+            //var texto = string.Format("O preço do produto é {0}", price);
+            var texto = $"O preço do produto é {price} apenas na promoção";
 
-            id = new Guid("b108e9b4-c7a3-4f05-b0ab-4dca396e1b06");
-
-            id = new Guid();
-            Console.WriteLine(id);
+            Console.WriteLine(texto);
         }
     }
 }
