@@ -1,9 +1,15 @@
-﻿namespace Calculator
+﻿using System;
+
+namespace Calculator
 {
     class Program
     {
         static void Main(string[] args)
         {
+            Soma();
+        }
+
+        static void Soma() {
             Console.Clear();
 
             Console.WriteLine("Primeiro valor: ");
@@ -15,10 +21,10 @@
             Console.WriteLine("");
             
             float resultado = v1 + v2;
-            Console.WriteLine("O resultado da soma é " + resultado);
+            //Console.WriteLine("O resultado da soma é " + resultado);
             Console.WriteLine($"O resultado da soma é {resultado}");
-            Console.WriteLine($"O resultado da soma é {v1 + v2}");
-            Console.WriteLine("O resultado da soma é " + (v1 + v2));
+            //Console.WriteLine($"O resultado da soma é {v1 + v2}");
+            //Console.WriteLine("O resultado da soma é " + (v1 + v2));
             //Console.WriteLine(v1);
         }
     }
