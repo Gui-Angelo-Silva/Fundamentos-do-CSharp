@@ -9,7 +9,6 @@ namespace TextEditor
         {
             Menu();
         }
-
         static void Menu()
         {
             Console.Clear();
@@ -27,7 +26,6 @@ namespace TextEditor
                 default: Menu(); break;
             }
         }
-
         static void Abrir()
         {
             Console.Clear();
@@ -44,7 +42,6 @@ namespace TextEditor
             Console.ReadLine();
             Menu();
         }
-
         static void Editar()
         {
             Console.Clear();
@@ -60,8 +57,6 @@ namespace TextEditor
 
             Salvar(text);
         }
-
-
         static void Salvar(string text)
         {
             Console.Clear();
