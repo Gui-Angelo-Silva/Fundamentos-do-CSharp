@@ -13,7 +13,7 @@ namespace MyApp
             var data = DateTime.Now;
             
             // 
-            var formatada = String.Format("{0:dd/MM/yyyy hh:mm:ss ff z}", data);
+            var formatada = String.Format("{0:r}", data);
             Console.WriteLine(formatada);
             // Console.WriteLine(data);
             // Console.WriteLine(data.Year);
