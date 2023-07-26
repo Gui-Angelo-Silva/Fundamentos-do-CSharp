@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Text;
 
 namespace MyApp
 {
@@ -6,21 +7,14 @@ namespace MyApp
     {
         static void Main(string[] args)
         {
-            var texto = "Este texto é um teste";
-            Console.WriteLine(texto.Replace("Este", "isto"));
-            Console.WriteLine(texto.Replace("e", "X"));
+            var texto = new StringBuilder();
+            texto.Append("Este texto é um teste");
+            texto.Append("é um teste");
+            texto.Append("este texto");
+            texto.Append("Este um teste");
 
-            var divisao = texto.Split(" ");
-            Console.WriteLine(divisao[0]);
-            Console.WriteLine(divisao[1]);
-            Console.WriteLine(divisao[2]);
-            Console.WriteLine(divisao[3]);
-
-            //var resultado = texto.Substring(5, 5);
-            var resultado = texto.Substring(5, texto.LastIndexOf("o"));
-            Console.WriteLine(resultado);
-
-            Console.WriteLine(texto.Trim());
+            texto.ToString();
+            Console.WriteLine(texto);
         }
     }
 }
