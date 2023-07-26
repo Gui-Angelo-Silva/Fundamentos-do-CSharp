@@ -6,12 +6,11 @@ namespace MyApp
     {
         static void Main(string[] args)
         {
-            var price = 10.2;
-            //var texto = "O preço do produto é " + price + "apenas na promoção";
-            //var texto = string.Format("O preço do produto é {0}", price);
-            var texto = $"O preço do produto é {price} apenas na promoção";
-
-            Console.WriteLine(texto);
+            var texto = "Este texto é um teste";
+            Console.WriteLine(texto.Contains("teste"));
+            Console.WriteLine(texto.Contains("Teste"));
+            Console.WriteLine(texto.Contains("Teste", StringComparison.OrdinalIgnoreCase));
+            Console.WriteLine(texto.Contains(null));
         }
     }
 }
