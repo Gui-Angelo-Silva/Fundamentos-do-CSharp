@@ -7,11 +7,20 @@ namespace MyApp
         static void Main(string[] args)
         {
             var texto = "Este texto é um teste";
-            Console.WriteLine(texto.ToLower());
-            Console.WriteLine(texto.ToUpper());
-            Console.WriteLine(texto.Insert(5, "AQUI "));
-            Console.WriteLine(texto.Remove(5, 5));
-            Console.WriteLine(texto.Length);
+            Console.WriteLine(texto.Replace("Este", "isto"));
+            Console.WriteLine(texto.Replace("e", "X"));
+
+            var divisao = texto.Split(" ");
+            Console.WriteLine(divisao[0]);
+            Console.WriteLine(divisao[1]);
+            Console.WriteLine(divisao[2]);
+            Console.WriteLine(divisao[3]);
+
+            //var resultado = texto.Substring(5, 5);
+            var resultado = texto.Substring(5, texto.LastIndexOf("o"));
+            Console.WriteLine(resultado);
+
+            Console.WriteLine(texto.Trim());
         }
     }
 }
