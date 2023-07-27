@@ -12,25 +12,24 @@ namespace MyApp
 
             var utcDate = DateTime.UtcNow;
             
-            Console.WriteLine(DateTime.Now);
-            Console.WriteLine(utcDate);
+            var timeSpan = new TimeSpan();
+            Console.WriteLine(timeSpan);
 
-            Console.WriteLine(utcDate.ToLocalTime());
+            var timeSpanNanoSegundos = new TimeSpan(1);
+            Console.WriteLine(timeSpanNanoSegundos);
 
-            var timezoneAustralia = TimeZoneInfo.FindSystemTimeZoneById("Pacific/Auckland");
-            Console.WriteLine(timezoneAustralia);
+            var timeSpanHoraMinutoSegundo = new TimeSpan(5, 12, 8);
+            Console.WriteLine(timeSpanHoraMinutoSegundo);
+            
+            var timeSpanDiaHoraMinutoSegundo = new TimeSpan(3, 5, 50, 18);
+            Console.WriteLine(timeSpanDiaHoraMinutoSegundo);
 
-            var horaAustralia = TimeZoneInfo.ConvertTimeFromUtc(utcDate, timezoneAustralia);
-            Console.WriteLine(horaAustralia);
+            var timeSpanHoraMinutoSegundoMilisegundo = new TimeSpan(15, 12, 55, 8, 100);
+            Console.WriteLine(timeSpanHoraMinutoSegundoMilisegundo);
 
-            var timezones =  TimeZoneInfo.GetSystemTimeZones();
-            foreach (var timezone in timezones)
-            {
-                Console.WriteLine(timezone.Id);
-                Console.WriteLine(timezone);
-                Console.WriteLine(TimeZoneInfo.ConvertTimeFromUtc(utcDate, timezone));
-                Console.WriteLine("---------");
-            }
+            Console.WriteLine(timeSpanHoraMinutoSegundo - timeSpanDiaHoraMinutoSegundo);
+            Console.WriteLine(timeSpanDiaHoraMinutoSegundo.Days);
+            Console.WriteLine(timeSpanDiaHoraMinutoSegundo.Add(new TimeSpan(12, 0, 0)));
 
             //var formatada = String.Format("{0:r}", data);
             //var data = new DateTime(2005, 07, 9, 8, 23, 14);
