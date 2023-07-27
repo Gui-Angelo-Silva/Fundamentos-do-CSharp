@@ -10,9 +10,8 @@ namespace Numbers
             Console.Clear();
 
             decimal valor = 10.25m;
-            Console.WriteLine(Math.Round(valor));
-            Console.WriteLine(Math.Ceiling(valor));
-            Console.WriteLine(Math.Floor(valor));
+            // string.Format("{0:C}", valor);
+            //valor.ToString("C", CultureInfo.CreateSpecificCulture("pt-BR"));
         }
     }
 }
