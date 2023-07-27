@@ -8,15 +8,20 @@ namespace DotnetLists
         {
             Console.Clear();
 
-            var meuArray = new int[5] { 1, 2, 3, 4, 5 };
-            meuArray[0] = 12;
+            var funcionarios = new Funcionario[5];
+            funcionarios[0] = new Funcionario() { Id = 2579 };
 
-            Console.WriteLine(meuArray.Length);
-
-            for (var index = 0; index < meuArray.Length; index++)
+            foreach (var Funcionario in funcionarios)
             {
-                Console.WriteLine(meuArray[index]);
+                Console.WriteLine(Funcionario.Id);
+                Console.WriteLine(Funcionario.Nome);
             }
         }
+    }
+
+    public struct Funcionario
+    {
+        public int Id { get; set; }
+        public string Nome { get; set; }
     }
 }
