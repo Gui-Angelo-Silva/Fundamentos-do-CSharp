@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Globalization;
 using System.Text;
 
 namespace MyApp
@@ -9,12 +10,13 @@ namespace MyApp
         {
             Console.Clear();
 
-            var data = DateTime.Now;
+            var pt = new CultureInfo("pt-PT");
+            var br = new CultureInfo("pt-BR");
+            var en = new CultureInfo("en-US");
+            var de = new CultureInfo("de-DE");
+            var atual = CultureInfo.CurrentCulture;
 
-            if (data.Date >= DateTime.Now.Date)
-                Console.WriteLine("É igual");
-
-            Console.WriteLine(data);
+            Console.WriteLine(DateTime.Now.ToString("D", de));
 
             //var formatada = String.Format("{0:r}", data);
             //var data = new DateTime(2005, 07, 9, 8, 23, 14);
