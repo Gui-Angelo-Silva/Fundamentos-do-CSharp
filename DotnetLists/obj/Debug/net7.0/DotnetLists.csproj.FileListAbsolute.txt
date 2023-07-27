@@ -1,0 +1,15 @@
+C:\dev\DotnetLists\bin\Debug\net7.0\DotnetLists.exe
+C:\dev\DotnetLists\bin\Debug\net7.0\DotnetLists.deps.json
+C:\dev\DotnetLists\bin\Debug\net7.0\DotnetLists.runtimeconfig.json
+C:\dev\DotnetLists\bin\Debug\net7.0\DotnetLists.dll
+C:\dev\DotnetLists\bin\Debug\net7.0\DotnetLists.pdb
+C:\dev\DotnetLists\obj\Debug\net7.0\DotnetLists.csproj.AssemblyReference.cache
+C:\dev\DotnetLists\obj\Debug\net7.0\DotnetLists.GeneratedMSBuildEditorConfig.editorconfig
+C:\dev\DotnetLists\obj\Debug\net7.0\DotnetLists.AssemblyInfoInputs.cache
+C:\dev\DotnetLists\obj\Debug\net7.0\DotnetLists.AssemblyInfo.cs
+C:\dev\DotnetLists\obj\Debug\net7.0\DotnetLists.csproj.CoreCompileInputs.cache
+C:\dev\DotnetLists\obj\Debug\net7.0\DotnetLists.dll
+C:\dev\DotnetLists\obj\Debug\net7.0\refint\DotnetLists.dll
+C:\dev\DotnetLists\obj\Debug\net7.0\DotnetLists.pdb
+C:\dev\DotnetLists\obj\Debug\net7.0\DotnetLists.genruntimeconfig.cache
+C:\dev\DotnetLists\obj\Debug\net7.0\ref\DotnetLists.dll
