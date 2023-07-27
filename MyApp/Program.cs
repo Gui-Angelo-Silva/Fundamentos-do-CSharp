@@ -9,12 +9,15 @@ namespace MyApp
         {
             Console.Clear();
 
-            //var data = new DateTime(2005, 07, 9, 8, 23, 14);
             var data = DateTime.Now;
-            
-            // 
-            var formatada = String.Format("{0:r}", data);
-            Console.WriteLine(formatada);
+             
+            Console.WriteLine(data);
+            Console.WriteLine(data.AddDays(12));
+            Console.WriteLine(data.AddMonths(1));
+            Console.WriteLine(data.AddHours(1));
+
+            //var formatada = String.Format("{0:r}", data);
+            //var data = new DateTime(2005, 07, 9, 8, 23, 14);
             // Console.WriteLine(data);
             // Console.WriteLine(data.Year);
             // Console.WriteLine(data.Month);
