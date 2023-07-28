@@ -33,6 +33,7 @@ namespace DotnetLists
             {
                 Console.WriteLine(ex.InnerException);
                 Console.WriteLine(ex.Message);
+                Console.WriteLine(ex.QaundoAconteceu);
                 Console.WriteLine("Exceção Customizada");
             }
             catch (Exception ex)
@@ -40,6 +41,10 @@ namespace DotnetLists
                 Console.WriteLine(ex.InnerException);
                 Console.WriteLine(ex.Message);
                 Console.WriteLine("Ops, algo deu errado!");
+            }
+            finally
+            {
+                Console.WriteLine("Chegou ao fim!");
             }
         }
 
@@ -55,7 +60,7 @@ namespace DotnetLists
             {
                 QaundoAconteceu = date;
             }
-            
+
             public DateTime QaundoAconteceu { get; set; }
         }
     }
